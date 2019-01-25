@@ -45,7 +45,8 @@ const download = (url, opts, hooks, cb) => {
 		transfer.download({
 			url: opts.url,
 			headers: opts.headers || {},
-			target: opts.target
+			target: opts.target,
+			name: opts.name
 		}, (ret) => {
 			ret = ret || {}
 
